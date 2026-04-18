@@ -374,19 +374,6 @@ body {
   overflow: hidden;
 }
 
-.stats-banner::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: repeating-linear-gradient(
-    90deg,
-    transparent,
-    transparent 25%,
-    rgba(255,255,255,0.03) 25%,
-    rgba(255,255,255,0.03) 25.5%
-  );
-}
-
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -400,6 +387,11 @@ body {
   align-items: center;
   justify-content: center;
   padding: 0 20px;
+  border-left: 1px solid rgba(255,255,255,0.12);
+}
+
+.stat-item:first-child {
+  border-left: none;
 }
 
 .stat-number {
