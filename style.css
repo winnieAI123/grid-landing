@@ -390,7 +390,6 @@ body {
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
   text-align: center;
   position: relative;
 }
@@ -400,24 +399,21 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100px;
+  padding: 0 20px;
 }
 
 .stat-number {
   font-family: var(--font-serif);
-  font-size: clamp(40px, 5vw, 56px);
+  font-size: clamp(36px, 4.5vw, 52px);
   font-weight: 600;
   color: white;
-  line-height: 1;
-  height: 56px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  line-height: 1.2;
+  margin-bottom: 12px;
+  white-space: nowrap;
 }
 
 .stat-number.price-range {
-  font-size: clamp(24px, 3vw, 32px);
-  letter-spacing: 0.02em;
+  font-size: clamp(28px, 3.5vw, 42px);
 }
 
 .stat-label {
@@ -425,7 +421,6 @@ body {
   font-size: 16px;
   font-weight: 500;
   color: rgba(255,255,255,0.8);
-  margin-top: 12px;
 }
 
 .stat-sublabel {
